@@ -307,14 +307,10 @@ label {
         margin-left: 10rem;
     }
 }
-
 @media (min-width:468px) {
     body {
-        background-color: #008B00;
+        background-color: #608BA1;
     }
 }
 
-body {
-    background-color: #008B00;
-}
 /*---------------------------------------------------------------------------------*/
