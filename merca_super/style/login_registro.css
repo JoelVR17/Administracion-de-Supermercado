@@ -1,0 +1,320 @@
+/*VARIABLES*/
+
+/*---------------------------------------------------------------------------------*/
+/*FUENTES*/
+:root {
+    --krub: 'Krub', sans-serif;
+    --mukta: 'Mukta', sans-serif;
+    --openSans: 'Open Sans', sans-serif;
+    --ptSans: 'PT Sans', sans-serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Staatlinches: 'Staatliches', cursive;
+    --ubuntu: 'Ubuntu', sans-serif;
+}
+
+/*---------------------------------------------------------------------------------*/
+/*PALETA DE COLORES*/
+:root {
+    --crema: #FFF4E6;
+    --celeste: #608BA1;
+    --grisOscuro: #383838;
+    --verde: #008B00;
+    --grisClaro: #EBEBEB;
+    --rojo: #FF0000;
+    --negro: #000000;
+    --blanco: #FFFFFF;
+}
+
+/*---------------------------------------------------------------------------------*/
+/*GLOBALES*/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    height: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--ubuntu);
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+p {
+    color: var(--negro);
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+picture {
+    width: 100%;
+    display: block;
+}
+
+h1, h2, h3 {
+    font-family: var(--ubuntu);
+    font-weight: 300;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.6rem;
+}
+
+/*---------------------------------------------------------------------------------*/
+/*CONTENEDOR PRINCIPAL*/
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+/*---------------------------------------------------------------------------------*/
+/*CONTENEDOR LOGO*/
+.contenedor__logo {
+    background-color: var(--celeste);
+    width: 100%;
+    height: 45rem;
+}
+
+.logo {
+    width: 31.7rem;
+    height: 23.7rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.contenedor__logo__titulo {
+    margin: 0 auto;
+    text-align: center;
+    color: var(--crema);
+    font-size: 5rem;
+}
+
+.contenedor__logo__titulo--spam, .contenedor__logo__titulo {
+    font-size: 3.5rem;
+}
+
+.contenedor__logo__titulo--spam {
+    font-weight: 900;
+}
+/*---------------------------------------------------------------------------------*/
+/*CONTENEDOR FORMULARIO*/
+.contenedor__form {
+    background-color: var(--crema);
+    width: 112.3rem;
+    height: 100%;
+}
+
+.titulo {
+    font-size: 3.5rem;
+    font-weight: 750;
+    margin-bottom: 0;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.formulario {
+    margin: 0 auto;
+    width: 45rem;
+    padding: 10rem;
+    padding-top: 3rem;
+}
+
+label {
+    color: var(--grisOscuro);
+    font-weight: 600;
+    font-size: 2.6rem;
+}
+
+.formulario__label__u {
+    margin-right: 9.5rem;
+}
+
+.formulario__label__p {
+    margin-right: 5rem;
+}
+
+.formulario__text {
+    border: solid 1px var(--grisOscuro);
+    border-radius: .6em;
+    width: 25rem;
+    height: 3rem;
+}
+
+::placeholder {
+    text-align: center;   
+}
+
+.contenedor__input {
+    display: block;
+    margin-bottom: 0;
+}
+
+.contenedor__input--ultimo {
+    display: block;
+    margin-bottom: 5rem;
+}
+
+.btn__celeste {
+    background-color: var(--celeste);
+    color: var(--crema);
+    border: none;
+    padding: 0rem;
+    font-size: 2.3rem;
+    font-family: var(--ubuntu);
+    border-radius: 1.5rem;
+    font-weight: 700;
+    width: 18rem;
+    height: 5rem;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 15.7rem
+}
+
+.registro {
+    font-weight: 300;
+}
+
+.registro--span {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/*---------------------------------------------------------------------------------*/
+/*MEDIA QUERIES PARA QUE SEA RESPONSIVE*/
+@media (min-width: 769px) { /*Tablet's y PC*/
+    .contenedor {
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .contenedor__logo {
+        width: 79.7rem;
+        height: 100%;
+    }
+    
+    .logo {
+        width: 41.7rem;
+        height: 33.7rem;
+        margin: 0 auto;
+        margin-top: 5rem;
+    }
+
+    .contenedor__logo__titulo--spam, .contenedor__logo__titulo {
+        font-size: 8rem;
+    }
+
+    .titulo {
+        font-size: 7rem;
+        font-weight: 900;
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+    }
+
+    .formulario {
+        margin: 0 auto;
+        width: 75rem;
+        margin-top: 15rem;
+        padding: 10rem;
+        margin-top: 7rem;
+    }
+
+    .contenedor__input {
+        display: flex;
+        margin-bottom: 5rem;
+    }
+
+    .formulario__text {
+        width: 90rem;
+        height: 4rem;
+    }
+}
+
+@media (min-width: 400px) { /*TODOS MENOS CELULAR*/
+    .formulario__text {
+        width: 50rem;
+        height: 4rem;
+    }
+
+    .formulario {
+        margin-left: 22rem;
+    }
+}
+
+@media (min-width: 769px) { /*PC*/
+    .formulario {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-height:745.6px) and (min-width:1519.2px) { /*PC JOEL*/
+    .titulo {
+        margin-bottom: 0;
+    }
+    
+    .formulario {
+        margin: 0rem 0rem 15rem 10rem;
+    }
+
+    .btn__celeste {
+        margin-left: 20rem;
+    }
+
+    .r {
+        width: 50rem;
+        display: flex;
+        margin-left: 13rem;
+    }
+}
+
+@media screen and (max-width:375px){ /*CELULAR*/
+    .btn__celeste {
+        margin-left: 2.3rem;
+    }
+
+    body {
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 376px){ /*TABLET*/
+    .r {
+        width: 50rem;
+        display: flex;
+        margin-left: 10rem;
+    }
+}
+
+@media (min-width:468px) {
+    body {
+        background-color: #008B00;
+    }
+}
+
+body {
+    background-color: #008B00;
+}
+/*---------------------------------------------------------------------------------*/
