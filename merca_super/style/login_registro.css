@@ -123,7 +123,7 @@ h4 {
 /*CONTENEDOR FORMULARIO*/
 .contenedor__form {
     background-color: var(--crema);
-    width: 112.3rem;
+    width: 100rem;
     height: 100%;
 }
 
@@ -224,11 +224,11 @@ label {
     }
 
     .contenedor__logo__titulo--spam, .contenedor__logo__titulo {
-        font-size: 8rem;
+        font-size: 5rem;
     }
 
     .titulo {
-        font-size: 7rem;
+        font-size: 4.5rem;
         font-weight: 900;
         margin-top: 10rem;
         margin-bottom: 5rem;
@@ -248,7 +248,7 @@ label {
     }
 
     .formulario__text {
-        width: 90rem;
+        width: 50rem;
         height: 4rem;
     }
 }
@@ -276,7 +276,7 @@ label {
     }
     
     .formulario {
-        margin: 0rem 0rem 15rem 10rem;
+        margin: 0rem 0rem 15rem 15rem;
     }
 
     .btn__celeste {
