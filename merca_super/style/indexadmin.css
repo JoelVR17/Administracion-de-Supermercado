@@ -1,0 +1,130 @@
+:root {
+    --crema: #FFF4E6;
+    --celeste: #608BA1;
+    --grisOscuro: #383838;
+    --verde: #008B00;
+    --grisClaro: #EBEBEB;
+    --rojo: #FF0000;
+    --negro: #000000;
+    --blanco: #FFFFFF;
+}
+body{
+    background-color: #FFF4E6;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .principal { 
+    background-color:#608BA1;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.container-titulo{
+    position: absolute;
+ 
+     
+ }
+
+ .container-titulo .merca{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30PX;
+    color: #FFF4E6;
+    margin-left: 200PX ;
+    }
+
+.textotitulo {
+    vertical-align: middle;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    margin-left: 30px;
+    
+}
+
+
+
+.bibi-cart{
+    color:white;
+
+}
+
+.textotitulo svg{ /*controla el color de los iconos */
+    fill: currentColor;
+}
+
+.contenido{
+    
+    width: 80%;
+    height: 650px;
+    background-color: #383838;
+    margin-left: 10% ;
+    margin-top: 30px;
+   
+
+
+}
+
+
+.imagen {
+    padding: 0;
+    display: flex;
+    justify-content: left;
+}
+
+.titulo {
+    text-align: left;
+    color : white;
+    margin-left: 200px;
+}
+    
+    
+
+.titulo h1{
+    font-weight: 800;
+    font-size: 65px;
+}
+
+.info{
+    text-align: right;
+    color:white;
+    margin-top: -500px;
+    margin-right: 80px;
+}
+
+.info h1{
+    font-weight: 800;
+    font-size: 85px;
+    
+}
+
+
+.info p{ /*tamaño de letra que esta sobre el boton*/
+    font-size: 30px;
+}
+
+.info button{
+    background-color: #FFF4E6;
+    border-radius: 20px;
+    color:#000000;
+    /*width: 100px;*/
+    padding: 0 50px;
+
+}
+
+
+
+
+
+
+
