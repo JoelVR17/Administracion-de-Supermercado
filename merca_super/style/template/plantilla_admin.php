@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./style/template/footer_header.css">
     <link rel="stylesheet" href="./style/normalize.css">
     <script src="https://kit.fontawesome.com/850c2e9361.js" crossorigin="anonymous"></script>
-    <title>Merca Super - Index Admin</title>
+    <title>Merca Super - Plantilla Admin</title>
     
 </head>
  <!--fin.Head-->
@@ -36,7 +36,7 @@
             <!-- CONTENEDOR DEL HOME -->
             <div class="contenedor__home">
                 <!-- INDEX -->
-                <a class="anclaP" href="index.php">
+                <a class="anclaP" href="indexadmin.php">
                     <p class="merca">Merca<br><span class="super">Súper</span></p>
                 </a>
             </div>
@@ -50,15 +50,15 @@
             <div class="contenedor__anclas">
 
                 <!-- INVENTARIO -->
-                <a class="ancla" href="mip.php">
+                <a class="ancla" href="inventario.php">
                     <p>Inventario</p>
-                    <div class="cont-anclaV" id="miP">
+                    <div class="cont-ancla" id="miP">
                         <i class="fa-solid fa-caret-up"></i>
                     </div>
                 </a >
 
                 <!-- PEDIDOS -->
-                <a class="ancla" href="">
+                <a class="ancla" href="pedidos.php">
                     <i class="fa-solid fa-warehouse"></i>
                     <div class="cont-ancla" id="cont">
                         <i class="fa-solid fa-square-list"></i>
@@ -66,7 +66,7 @@
                 </a >
 
                 <!-- CONTACTO -->
-                <a class="ancla" href="">
+                <a class="ancla" href="contacto_admin.php">
                     <i class="fa-solid fa-message"></i>
                     <div class="cont-ancla" id="car">
                         <i class="fa-solid fa-caret-up"></i>
@@ -89,39 +89,9 @@
         </nav>
     </header> <!--fin.header-->
 
-    <!-- CONTENIDO  -->
-    <div class="contenido__columnas">
-        <div class="imagen">
-            <img src="./img/logo.png">
-        </div>
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div style="border: 1px solid black; height: 800px;" class="container">
 
-        <div class="contenedor__tit">
-            <!-- INDEX -->
-            <a class="anclaP" href="index.php">
-                <p id="mercas" class="mercaA">Merca<br>
-                <span id="supers" class="superA">Súper</span></p>
-            </a>
-        </div>
-
-        <div class="infoA">
-            <h1>Bienvenido</h1>
-            <p>Ve los pedidos</p>
-            <br>
-            <a href="#" class="ir">
-                Ir
-            </a>
-            <br> <br>
-            <p>Ve el inventario</p>
-            <br>
-            <a href="#" class="ir">
-                Ir
-            </a>
-        </div>
-        
-    </div>
-
-    <div class="contenedor__grafico" style="width: 90%; height: 40rem; display: flex; justify-content: center; margin-top: 50rem; margin-bottom: 10rem;">
-        <img src="img/grafico.png" alt="" style="width: 100%; height: 100%;">
     </div>
 
     <!-- FOOTER -->
@@ -131,7 +101,7 @@
             <!-- CONTENEDOR DEL HOME -->
             <div class="contenedor__home">
                 <!-- INDEX -->
-                <a class="ancla" href="index.php">
+                <a class="ancla" href="indexadmin.php">
                     <p class="merca">Merca<br><span class="super">Súper</span></p>
                 </a >
             </div>
@@ -144,7 +114,7 @@
             <!-- CONTENEDOR DE LAS ANCLAS -->
             <div class="contenedor__anclas">
                 <!-- INVENTARIO -->
-                <a class="ancla-f" href="">
+                <a class="ancla-f" href="inventario.php">
                     <p>Inventario</p>
                     <div class="cont-ancla" id="miP">
                         <i class="fa-solid fa-caret-up"></i>
@@ -152,7 +122,7 @@
                 </a >
 
                 <!-- LISTA PEDIDOS -->
-                <a class="ancla-f" href="">
+                <a class="ancla-f" href="pedidos.php">
                     <i class="fa-solid fa-warehouse"></i>
                     <div class="cont-ancla" id="cont">
                         <i class="fa-solid fa-list-check"></i>
@@ -160,7 +130,7 @@
                 </a >
 
                 <!-- CONTACTO -->
-                <a class="ancla-f" href="">
+                <a class="ancla-f" href="contacto_admin.php">
                     <i class="fa-solid fa-message"></i>
                     <div class="cont-ancla" id="car">
                         <i class="fa-solid fa-caret-up"></i>

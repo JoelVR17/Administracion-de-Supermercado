@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./style/template/footer_header.css">
     <link rel="stylesheet" href="./style/normalize.css">
     <script src="https://kit.fontawesome.com/850c2e9361.js" crossorigin="anonymous"></script>
-    <title>Merca Super - Index</title>
+    <title>Merca Super - Carrito</title>
     
 </head> <!--fin.Head-->
 
@@ -27,7 +27,7 @@
 <body style="height: auto;">
 
     <!-- HEADER -->
-    <header class="headerI">
+    <header class="header">
         <nav class="navbar navbar-light">
                 
                 <!-- CONTENEDOR DEL HOME -->
@@ -72,7 +72,7 @@
                     <!-- CARRITO -->
                     <a class="ancla" href="carrito.php">
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <div class="cont-ancla" id="car">
+                        <div class="cont-anclaV" id="car">
                             <i class="fa-solid fa-caret-up"></i>
                         </div>
                     </a >
@@ -92,59 +92,9 @@
         </nav>
     </header> <!--fin.header-->
 
-    <!-- CONTENIDO COLUMNAS -->
-    <div class="contenido__columnas">
-        <div class="info">
-
-            <h1>¡Haz tu pedido en línea!</h1>
-
-            <p>Llega hasta tu casa</p>
-                <br>
-            <a href="#" class="ir">
-                Ir
-            </a>
-        </div>
-        <br> 
-        <br>
-
-        <!-- CAJAS -->
-        <div class="cajas">
-            <diV class="Celular">
-                <div class="contenedorIcono">
-                    <i class="fa-solid fa-mobile-screen-button icon"></i>
-                </div>
-                <br>
-                <h2>Celular</h2>
-                <br>
-                <p class="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi accusantium
-                    reprehenderit labore voluptatibus quisquam maxime, nisi illum perspiciatis laboriosam saepe </p>
-            </diV>
-            <diV class="Casa"> 
-                <div class="contenedorIcono">
-                    <i class="fa-solid fa-truck-fast icon"></i>
-                </div>
-                <br>
-                <h2>Casa</h2>
-                <br>
-                <p class="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi accusantium
-                    reprehenderit labore voluptatibus quisquam maxime, nisi illum perspiciatis laboriosam saepe </p>
-            </diV>
-            <diV class="Compra">
-                <div class="contenedorIcono">
-                    <i class="fa-solid fa-cart-shopping icon"></i>
-                </div>
-                <br>
-                <h2>Compra</h2>
-                <br>
-                <p class="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi accusantium
-                    reprehenderit labore voluptatibus quisquam maxime, nisi illum perspiciatis laboriosam saepe </p>
-            </diV>
-        </div>    
-    </div>
-
-    <!-- CONTENIDO IMAGEN -->
-    <div class="contenido__imagen">
-            <img src="img/img.png" alt="imagen index">
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div style="border: 1px solid black; height: 800px;" class="container">
+        
     </div>
 
     <!-- FOOTER -->

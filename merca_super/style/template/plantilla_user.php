@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./style/template/footer_header.css">
     <link rel="stylesheet" href="./style/normalize.css">
     <script src="https://kit.fontawesome.com/850c2e9361.js" crossorigin="anonymous"></script>
-    <title>Merca Super - Index</title>
+    <title>Merca Super - Plantilla</title>
     
 </head> <!--fin.Head-->
 
@@ -94,7 +94,7 @@
 
     <!-- CONTENEDOR PRINCIPAL -->
     <div style="border: 1px solid black; height: 800px;" class="container">
-        
+
     </div>
 
     <!-- FOOTER -->
