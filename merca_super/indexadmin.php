@@ -36,7 +36,7 @@
             <!-- CONTENEDOR DEL HOME -->
             <div class="contenedor__home">
                 <!-- INDEX -->
-                <a class="anclaP" href="index.php">
+                <a class="anclaP" href="indexadmin.php">
                     <p class="merca">Merca<br><span class="super">Súper</span></p>
                 </a>
             </div>
@@ -50,23 +50,23 @@
             <div class="contenedor__anclas">
 
                 <!-- INVENTARIO -->
-                <a class="ancla" href="mip.php">
+                <a class="ancla" href="inventario.php">
                     <p>Inventario</p>
-                    <div class="cont-anclaV" id="miP">
+                    <div class="cont-ancla" id="miP">
                         <i class="fa-solid fa-caret-up"></i>
                     </div>
                 </a >
 
                 <!-- PEDIDOS -->
-                <a class="ancla" href="">
-                    <i class="fa-solid fa-warehouse"></i>
+                <a class="ancla" href="pedidos.php">
+                    <i class="fa-solid fa-list-check"></i>
                     <div class="cont-ancla" id="cont">
                         <i class="fa-solid fa-square-list"></i>
                     </div>
                 </a >
 
                 <!-- CONTACTO -->
-                <a class="ancla" href="">
+                <a class="ancla" href="contacto_admin.php">
                     <i class="fa-solid fa-message"></i>
                     <div class="cont-ancla" id="car">
                         <i class="fa-solid fa-caret-up"></i>
@@ -85,6 +85,12 @@
                 <a class="anclaF" href="">
                     <i class="fa-brands fa-facebook-square"></i>
                 </a>
+
+                <!-- LOG OUT -->
+                <a class="ancla anclaS" href="login.php">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+
             </div>
         </nav>
     </header> <!--fin.header-->
@@ -97,7 +103,7 @@
 
         <div class="contenedor__tit">
             <!-- INDEX -->
-            <a class="anclaP" href="index.php">
+            <a class="anclaP">
                 <p id="mercas" class="mercaA">Merca<br>
                 <span id="supers" class="superA">Súper</span></p>
             </a>
@@ -107,13 +113,13 @@
             <h1>Bienvenido</h1>
             <p>Ve los pedidos</p>
             <br>
-            <a href="#" class="ir">
+            <a href="pedidos.php" class="ir">
                 Ir
             </a>
             <br> <br>
             <p>Ve el inventario</p>
             <br>
-            <a href="#" class="ir">
+            <a href="inventario.php" class="ir">
                 Ir
             </a>
         </div>
@@ -131,7 +137,7 @@
             <!-- CONTENEDOR DEL HOME -->
             <div class="contenedor__home">
                 <!-- INDEX -->
-                <a class="ancla" href="index.php">
+                <a class="ancla" href="indexadmin.php">
                     <p class="merca">Merca<br><span class="super">Súper</span></p>
                 </a >
             </div>
@@ -144,7 +150,7 @@
             <!-- CONTENEDOR DE LAS ANCLAS -->
             <div class="contenedor__anclas">
                 <!-- INVENTARIO -->
-                <a class="ancla-f" href="">
+                <a class="ancla-f" href="inventario.php">
                     <p>Inventario</p>
                     <div class="cont-ancla" id="miP">
                         <i class="fa-solid fa-caret-up"></i>
@@ -152,15 +158,15 @@
                 </a >
 
                 <!-- LISTA PEDIDOS -->
-                <a class="ancla-f" href="">
-                    <i class="fa-solid fa-warehouse"></i>
+                <a class="ancla-f" href="pedidos.php">
+                    <i class="fa-solid fa-list-check"></i>
                     <div class="cont-ancla" id="cont">
                         <i class="fa-solid fa-list-check"></i>
                     </div>
                 </a >
 
                 <!-- CONTACTO -->
-                <a class="ancla-f" href="">
+                <a class="ancla-f" href="contacto_admin.php">
                     <i class="fa-solid fa-message"></i>
                     <div class="cont-ancla" id="car">
                         <i class="fa-solid fa-caret-up"></i>
@@ -178,6 +184,12 @@
                 <a class="anclaF" href="">
                     <i class="fa-brands fa-facebook-square"></i>
                 </a>
+
+                <!-- LOG OUT -->
+                <a class="ancla-f anclaS" href="login.php">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+
             </div>
         </nav>
 

@@ -29,7 +29,7 @@
 <body>
 
     <!-- HEADER -->
-    <header class="headerI">
+    <header class="header">
 
         <nav class="navbar navbar-light">
 
@@ -59,9 +59,9 @@
 
                 <!-- PEDIDOS -->
                 <a class="ancla" href="pedidos.php">
-                    <i class="fa-solid fa-warehouse"></i>
+                    <i class="fa-solid fa-list-check"></i>  
                     <div class="cont-ancla" id="cont">
-                        <i class="fa-solid fa-square-list"></i>
+                        <i class="fa-solid fa-caret-up"></i>
                     </div>
                 </a >
 
@@ -85,6 +85,12 @@
                 <a class="anclaF" href="">
                     <i class="fa-brands fa-facebook-square"></i>
                 </a>
+
+                <!-- LOG OUT -->
+                <a class="ancla anclaS" href="login.php">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+                
             </div>
         </nav>
     </header> <!--fin.header-->
@@ -123,9 +129,9 @@
 
                 <!-- LISTA PEDIDOS -->
                 <a class="ancla-f" href="pedidos.php">
-                    <i class="fa-solid fa-warehouse"></i>
+                    <i class="fa-solid fa-list-check"></i>
                     <div class="cont-ancla" id="cont">
-                        <i class="fa-solid fa-list-check"></i>
+                        <i class="fa-solid fa-caret-up"></i>
                     </div>
                 </a >
 
@@ -148,6 +154,12 @@
                 <a class="anclaF" href="">
                     <i class="fa-brands fa-facebook-square"></i>
                 </a>
+
+                <!-- LOG OUT -->
+                <a class="ancla-f anclaS" href="login.php">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+
             </div>
         </nav>
 
