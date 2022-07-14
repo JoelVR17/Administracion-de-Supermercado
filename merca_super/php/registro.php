@@ -14,12 +14,12 @@
         echo 2;
     }
     else {
-        $sql = "INSERT INTO usuarios (nombre,apellido,cedula,username,passwd,rol_id) values ('$nombre','$apellido','$cedula','$username','$passwd','$rol')";
+        $sql = "INSERT INTO usuarios (nombre_usuario,apellido,cedula,usuario,passwd,rol_id) values ('$nombre','$apellido','$cedula','$username','$passwd','$rol')";
         echo $result = mysqli_query($conexion,$sql);
     }
 
     function buscaRepetido ($user,$pass,$conexion) {
-        $sql = "SELECT * FROM usuarios WHERE username = '$user' AND passwd= '$pass' ";
+        $sql = "SELECT * FROM usuarios WHERE usuario = '$user' AND passwd= '$pass' ";
         $result = mysqli_query($conexion,$sql);
         
         if (mysqli_num_rows($result) > 0) {

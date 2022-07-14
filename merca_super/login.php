@@ -46,7 +46,7 @@
                             </div>
                             <div class="col-12">
                                 <label for="loginPass" class="form-label">Contraseña</label>
-                                <input type="Pass" class="form-control" id="loginPass"  maxlength="20" minlength="5">
+                                <input type="password" class="form-control" id="loginPass"  maxlength="20" minlength="5">
                             </div>
                             <div class="col-12" id="x">
                                 <input class="btn" id="entrarSistema" onclick="alert()" value="Ingresar" readonly>

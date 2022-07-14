@@ -39,7 +39,8 @@ function alert() {
         success: function(r) {
             if (r == 1) {
                 window.location = "index.php";
-            } else {
+            } 
+            else {
                 swal({
                     title: "¡Error!",
                     text: "Fallo al Iniciar Sesión",

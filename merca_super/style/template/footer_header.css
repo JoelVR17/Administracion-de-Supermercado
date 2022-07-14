@@ -1,0 +1,245 @@
+/*VARIABLES*/
+
+/*---------------------------------------------------------------------------------*/
+/*FUENTES*/
+:root {
+    --krub: 'Krub', sans-serif;
+    --mukta: 'Mukta', sans-serif;
+    --openSans: 'Open Sans', sans-serif;
+    --ptSans: 'PT Sans', sans-serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Staatlinches: 'Staatliches', cursive;
+    --ubuntu: 'Ubuntu', sans-serif;
+}
+
+/*---------------------------------------------------------------------------------*/
+/*PALETA DE COLORES*/
+:root {
+    --crema: #FFF4E6;
+    --celeste: #608BA1;
+    --grisOscuro: #383838;
+    --verde: #008B00;
+    --grisClaro: #EBEBEB;
+    --rojo: #FF0000;
+    --negro: #000000;
+    --blanco: #FFFFFF;
+}
+
+/*---------------------------------------------------------------------------------*/
+
+/*PRINCIPALES*/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*HEADER OTROS*/
+.header {
+    background-color: var(--celeste);
+    height: 100%;
+    position: relative;
+    height: 15rem;
+}
+
+/*HEADER INDEX*/
+.headerI {
+    background-color: var(--celeste);
+    height: 100%;
+    position: relative;
+    height: 50rem;
+}
+
+.navbar {
+    height: 10rem;
+    width: 100%;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+/*TITULO DE MERCA SUPER*/
+.container-titulo {
+    height: auto;
+    width: auto;
+}
+
+.merca {
+    color: var(--crema);
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.super {
+    color: var(--crema);
+    font-size: 100%;
+    margin: 0 auto;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.mercaA {
+    color: var(--crema);
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.superA {
+    color: var(--crema);
+    font-size: 100%;
+    margin: 0 auto;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.ancla {
+    text-decoration: none;
+    color: var(--crema);
+    font-size: 2.5rem;
+    font-weight: 550;
+    margin-bottom: 0;
+}
+
+.ancla:hover {
+    color: var(--grisOscuro);
+}
+
+.anclaI {
+    text-decoration: none;
+    color: var(--crema);
+    font-size: 2.5rem;
+    margin-right: 3%;
+}
+
+.anclaI:hover {
+    background: linear-gradient( #405DE6,#5851DB,#833AB4,#C13584,#E1306C,
+                                 #FD1D1D,#F56040,#F77737,#FCAF45,#FFDC80);
+    -webkit-background-clip: text;
+    color: transparent;  
+}
+
+.anclaF {
+    text-decoration: none;
+    color: var(--crema);
+    font-size: 2.5rem;
+    margin-right: 15%;
+}
+
+/*CONTENEDOR ANCLA*/
+.contenedor__anclas {
+    display: none;
+    justify-content:space-evenly;
+    width: 40%;
+}
+
+/*MENU HAMBURGUESA*/
+@media screen and (min-width: 770px) {
+    .contenedor__anclas {
+        display: flex;
+        justify-content:space-evenly;
+        width: 40%;
+    }
+}
+
+/*CONTENEDOR HOME*/
+.contenedor__home {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+/*CONTENEDOR DEL MERCA SUPER ABAJO DEL ICONO ADMIN*/
+.contenedor__tit {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+/*CONTENEDOR REDES*/
+.contenedor__redes {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+/*FOOTER*/
+.footer {
+    background-color: var(--grisOscuro);
+    height: 15rem;
+    position: relative;
+}
+
+.contenedor_derechos {
+    display: flex;
+    justify-content: center;
+    height: 10%;
+}
+
+.derechos {
+    color: var(--crema);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.cont-ancla {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    opacity: 0;
+}
+
+.cont-anclaV {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    opacity: 1;
+}
+
+.ancla-f {
+    text-decoration: none;
+    color: var(--crema);
+    font-size: 2.5rem;
+    font-weight: 550;
+    margin-bottom: 0;
+}
+
+.ancla-f:hover {
+    color: var(--celeste)
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anclaP {
+    text-decoration: none;
+}
+
+.mostrar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    width: 150px;
+}
+
+.desplegar {
+    margin-top: 18rem;
+}
+
+@media screen and (min-width: 770px) {
+    .mostrar {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
