@@ -148,10 +148,40 @@
         </div>    
     </div>
 
-    <!-- CONTENIDO IMAGEN -->
-    <div class="contenido__imagen">
-            <img src="img/img.png" alt="imagen index">
+    <!-- Aqui va el carrusel -->
+    <div class="br_espacio">
+        </div>
+
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" >
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://www.larepublica.net/storage/images/2019/12/05/20191205112225.pilsen-fifco.jpg"
+                class="imagen_carrusel" alt="..."  style="">
+        </div>
+        <div class="carousel-item">
+            <img src="https://www.heineken.com/media-us/0pip2jhq/web-site-uefa-hr.jpg?quality=85"
+                class="imagen_carrusel" alt="..." >
+        </div>
+        <div class="carousel-item">
+            <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2020/02/coca-cola-portada-1877741.jpg"
+                class="imagen_carrusel" alt="..." >
+        </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+    <div class="br_espacio_2">
+        </div>
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -221,5 +251,8 @@
 
 <!-- JAVASCRIPT -->
 <script src="js/index.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="./JS/JS.js"></script>
 </html> <!--fin.html-->
