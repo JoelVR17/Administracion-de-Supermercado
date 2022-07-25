@@ -193,3 +193,7 @@ h1 {
 #f {
     height: auto;
 }
+
+.contenedor_form {
+    padding: 20%;
+}
