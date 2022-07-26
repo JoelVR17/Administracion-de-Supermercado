@@ -355,8 +355,6 @@ footer {
     
 }
 
-
-
 /*control de br de carrusel*/
 .br_espacio{
     height: 500px;
@@ -371,26 +369,27 @@ footer {
     padding: 0 10% 0;
 }
 
-
-
 /*aqui esta el css de la pantalla nosotros.*/
 
-.contenido_nosotros{ /*controla la caja celeste*/
-    
+.contenido_nosotros{ /*controla la caja celeste*/    
     width: 100%;
     height: 600px;
-    background-color: #608BA1;
+    background-color: var(--celeste);
     margin-left: 0 ;
-    }
+}
 
-    .infonosotros{
-        text-align: center;
-        justify-content:center ;
-        
-    }
+.infonosotros{
+    text-align: center;
+    justify-content:center ;      
+}
 
-    .encuentranos{
-        text-align: center;
-        justify-content:center ; 
-    }
+.encuentranos{
+    text-align: center;
+    justify-content:center ; 
+}
 
+.n {
+    color: var(--grisOscuro);
+    font-weight: 800;
+    font-size: 35px; 
+}

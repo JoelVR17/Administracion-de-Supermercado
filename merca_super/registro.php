@@ -16,7 +16,7 @@
 </head> <!--fin.Head-->
 
 <!-- BODY -->
-<body>
+<body id="body">
 
     <!-- MAIN -->
     <main class="container-fluid">

@@ -47,7 +47,7 @@ html, body {
 
 /*COLUMNA 01*/
 .col-1 {
-    height: 100%;
+    height: auto !important;
     width: 40%;
     padding: 0;
     background-color: var(--celeste);
@@ -196,4 +196,15 @@ h1 {
 
 .contenedor_form {
     padding: 20%;
+}
+
+/*AJUSTES PARA BODY DE REGISTRO*/
+#body {
+    height: auto;
+}
+
+@media (min-height: 1050px) {
+    #body {
+        min-height: 920px;
+    }
 }
