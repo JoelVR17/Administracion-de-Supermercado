@@ -21,7 +21,7 @@
     <div class="contenido__columnas">
         <div class="info">
 
-            <h1>¡Haz tu pedido en línea!</h1>
+            <h1 id="tit">¡Haz tu pedido en línea!</h1>
 
             <p>Llega hasta tu casa</p>
                 <br>

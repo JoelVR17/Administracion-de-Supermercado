@@ -49,6 +49,7 @@
                 </div>
             </a >
         </div>
+
         <!-- CONTENEDOR DE LAS REDES -->
         <div class="contenedor__redes">
             <!-- INSTAGRAM -->

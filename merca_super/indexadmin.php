@@ -32,7 +32,7 @@
         </div>
 
         <div class="infoA">
-            <h1>Bienvenido</h1>
+            <h1 id="tit">Bienvenido</h1>
             <p>Ve los pedidos</p>
             <br>
             <a href="pedidos.php" class="ir">
