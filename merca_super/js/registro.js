@@ -10,7 +10,7 @@ function alert() {
     // Validamos que los datos no esten vacios, se usa JQuery
     if ($("#registerName").val() == "") {
         // Alerta de Sweet Alert
-        swal({
+        Swal.fire({
             title: "¡Error!",
             text: "¡Debe ingresar su Nombre!",
             icon: "error",
@@ -19,7 +19,7 @@ function alert() {
         });
         return false;
     } else if ($("#registerLastName").val() == "") {
-        swal({
+        Swal.fire({
             title: "¡Error!",
             text: "¡Debe ingresar su Apellido!",
             icon: "error",
@@ -28,7 +28,7 @@ function alert() {
         });
         return false;
     } else if ($("#registerCedula").val() == "") {
-        swal({
+        Swal.fire({
             title: "¡Error!",
             text: "¡Debe ingresar su Cédula!",
             icon: "error",
@@ -37,7 +37,7 @@ function alert() {
         });
         return false;
     } else if ($("#registerUser").val() == "") {
-        swal({
+        Swal.fire({
             title: "¡Error!",
             text: "¡Debe ingresar su Usuario!",
             icon: "error",
@@ -46,7 +46,7 @@ function alert() {
         });
         return false;
     } else if ($("#registerPass").val() == "") {
-        swal({
+        Swal.fire({
             title: "¡Error!",
             text: "¡Debe ingresar su Contraseña!",
             icon: "error",
@@ -55,9 +55,9 @@ function alert() {
         });
         return false;
     } else if (!($("#gridCheck").prop('checked'))) {
-        swal({
+        Swal.fire({
             title: "¡Error!",
-            text: "¡Debe ingresar aceptar las Políticas de Privacidad!",
+            text: "¡Debe aceptar las políticas de privacidad!",
             icon: "error",
             dangerMode: true, // Para poner el fondo del boton de color rojo
             button: "Continuar",
@@ -73,12 +73,12 @@ function alert() {
 
     $.ajax({
         type: "POST",
-        url: "./php/registro.php",
+        url: "./database/registro.php",
         data: cadena,
         success: function(r) {
             if (r == 2) {
                 $('#formRegistro')[0].reset();
-                swal({
+                Swal.fire({
                     title: "¡Error!",
                     text: "Este usuario ya existe",
                     icon: "error",
@@ -87,14 +87,14 @@ function alert() {
                 });
             } else if (r == 1) {
                 $('#formRegistro')[0].reset();
-                swal({
+                Swal.fire({
                     title: "¡Correcto!",
                     text: "Usuario agregado con exito",
                     icon: "success",
                     button: "Continuar",
                 });
             } else {
-                swal({
+                Swal.fire({
                     title: "¡Error!",
                     text: "Fallo al agregar usuario",
                     icon: "error",

@@ -1,12 +1,9 @@
-//  SE HACE USO DE AJAX PARA CONSULTAR A LA BD
-
 //  SE EXTRAEN LOS ID DE LOS INPUT PARA LOGRAR VALIDAR LA FUNCION
 let loginUser = document.getElementById("loginUser");
 let loginPass = document.getElementById("loginPass");
 
 //  SE ESTABLECE FUNCION PARA VALIDAR EL LOGIN
 function alert() {
-
     // Validamos que los datos no esten vacios, se usa JQuery
     if ($("#loginUser").val() == "") {
         // Alerta de Sweet Alert
@@ -34,23 +31,25 @@ function alert() {
 
     $.ajax({
         type: "POST",
-        url: "./php/login.php",
+        url: "./database/validar.php",
         data: cadena,
         success: function(r) {
             if (r == 1) {
-                window.location = "index.php";
+                window.location = "indexadmin.php";
             } 
+            else if (r == 2) {
+                window.location = "index.php";
+            }
             else {
                 swal({
                     title: "¡Error!",
-                    text: "Fallo al Iniciar Sesión",
+                    text: "Fallo al iniciar sesión",
                     icon: "error",
                     dangerMode: true,
                     button: "Continuar",
                 });
             }
         }
-
     });
 
 }

@@ -72,6 +72,34 @@ html, body {
     background-color: var(--crema);
 }
 
+/* Assign full width inputs*/ 
+input[type=text], 
+input[type=password] { 
+    width: 100%; 
+    padding: 8px 50px; 
+    margin: 8px 0; 
+    display: inline-block; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+} 
+
+.fonticon {
+    position: relative;
+    margin: 2px;
+}
+  
+.fonticon i{
+    position: absolute;
+    left: 20px;
+    top: 53px;
+    color: gray;
+}
+
+.registro {
+    font-weight: bolder;
+    font-size: 16px;
+}
+
 @media (max-width: 768px) { /*para que no sirva para mayores de 768px de ancho*/
     .row {
         display: block;
@@ -150,19 +178,19 @@ html, body {
 }
 
 .cont-form-cont {
-    width: 70%;
+    width: 65%;
     height: 50%;
     padding: 2%;
 }
 
 #x {
     display: flex;
-    justify-content: center;
+    justify-content:left;
 }
 
 #entrarSistema {
-    width: 40%;
-    margin-top: 5%;
+    margin-top: 3px;
+    width: 100%;
     background-color: var(--celeste);
     color: var(--crema);
     font-weight: 500;

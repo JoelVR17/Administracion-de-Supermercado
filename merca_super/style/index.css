@@ -82,6 +82,78 @@ div.principal {
     text-align: center;
 }
 
+#tablaProductos {
+    width: 100%;
+}
+
+.conteiner {
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+/* Estos estilos son para el encabezado de la tabla se establece de esta forma accediendo con dataTable */
+table.dataTable thead {
+    background-color: #f4d58d;
+    color: #353535;
+    text-align: center;
+}
+
+table.dataTable tbody {
+    text-align: center;
+}
+
+table.dataTable {
+    width: 100%;
+}
+
+/* Personalizar colores botones de agregar-editar-borrar-guardar-cancelar */
+.nuevo {
+    background-color: #2b9348;
+    color: white;
+    border:none;
+    cursor:pointer;
+}
+
+.editar {
+    background-color: #0d6efd;
+    color: white;
+    border:none;
+    cursor:pointer;
+}
+
+.borrar {
+    background-color: #d00000;
+    color: white;
+    border:none;
+    cursor:pointer;
+}
+
+.guardar {
+    background-color: #2b9348;
+    color: white;
+    border:none;
+    cursor:pointer;
+}
+
+.guardar:hover {
+    background-color: #2b9348;
+    color: white;
+}
+
+.cancelar {
+    background-color: #d00000;
+    color: white;
+    border:none;
+    cursor:pointer;
+}
+
+.cancelar:hover {
+    background-color: #d00000;
+    color: white;
+}
+
 .textotitulo {
     vertical-align: middle;
     color: var(--blanco);
@@ -353,7 +425,6 @@ footer {
 .imagen_carrusel{
     width: 100%;
     height:1500px ;
-    
 }
 
 /*control de br de carrusel*/

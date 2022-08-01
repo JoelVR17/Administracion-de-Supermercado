@@ -1,9 +1,7 @@
 <!-- HTML5 -->
 <!DOCTYPE html>
-
 <!-- HTML -->
 <html lang="en">
-
 <!-- HEAD -->
 <head>
     <?php require_once "scripts.php"; ?>
@@ -20,16 +18,12 @@
     <link rel="stylesheet" href="./style/normalize.css">
     <script src="https://kit.fontawesome.com/850c2e9361.js" crossorigin="anonymous"></script>
     <title>Merca Super - Plantilla</title>
-    
 </head> <!--fin.Head-->
-
 <!-- BODY -->
 <body style="height: auto;">
-
     <!-- HEADER -->
     <header class="header">
-        <nav class="navbar navbar-light">
-                
+        <nav class="navbar navbar-light"> 
                 <!-- CONTENEDOR DEL HOME -->
                 <div class="contenedor__home">
                     <!-- INDEX -->
@@ -37,12 +31,10 @@
                         <p class="merca">Merca<br><span class="super">Súper</span></p>
                     </a>
                 </div>
-
                 <!-- MENU MOBILE -->
                 <div class="mobile-menu" style="font-size: 3rem; cursor: pointer;">
                     <i style="color: #FFF4E6;" class="fa-solid fa-bars"></i>
                 </div>
-
                 <!-- CONTENEDOR DE LAS ANCLAS -->
                 <div class="contenedor__anclas">
                     <!-- MI PERFIL -->
@@ -52,7 +44,6 @@
                             <i class="fa-solid fa-caret-up"></i>
                         </div>
                     </a >
-
                     <!-- NOSOTROS -->
                     <a class="ancla" href="nos.php">
                         <p>Nosotros</p>
@@ -60,7 +51,6 @@
                             <i class="fa-solid fa-caret-up"></i>
                         </div>
                     </a >
-
                     <!-- CONTACTO -->
                     <a class="ancla" href="">
                         <p>Contacto</p>
@@ -68,9 +58,8 @@
                             <i class="fa-solid fa-caret-up"></i>
                         </div>
                     </a >
-
                     <!-- CARRITO -->
-                    <a class="ancla" href="">
+                    <a class="ancla" href="./database/logout.php">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <div class="cont-ancla" id="car">
                             <i class="fa-solid fa-caret-up"></i>
@@ -91,16 +80,13 @@
                 </div>
         </nav>
     </header> <!--fin.header-->
-
     <!-- CONTENEDOR PRINCIPAL -->
     <div style="border: 1px solid black; height: 800px;" class="container">
 
     </div>
-
     <!-- FOOTER -->
     <footer class="footer">
-        <nav class="navbar navbar-light">
-                
+        <nav class="navbar navbar-light">  
             <!-- CONTENEDOR DEL HOME -->
             <div class="contenedor__home">
                 <!-- INDEX -->
@@ -108,31 +94,26 @@
                     <p class="merca">Merca<br><span class="super">Súper</span></p>
                 </a >
             </div>
-
             <!-- MENU MOBILE -->
             <div class="mobile-menu" style="font-size: 3rem; cursor: pointer;">
                 <i style="color: #FFF4E6;" class="fa-solid fa-bars"></i>
             </div>
-
             <!-- CONTENEDOR DE LAS ANCLAS -->
             <div class="contenedor__anclas">
                 <!-- MI PERFIL -->
                 <a class="ancla-f" href="">
                     <p>Mi Perfil</p>
                 </a >
-
                 <!-- NOSOTROS -->
                 <a class="ancla-f" href="">
                     <p>Nosotros</p>
                 </a >
-
                 <!-- CONTACTO -->
                 <a class="ancla-f" href="">
                     <p>Contacto</p>
                 </a >
-
                 <!-- CARRITO -->
-                <a class="ancla-f" href="">
+                <a class="ancla-f" href="./database/logout.php">
                     <i class="fa-solid fa-cart-shopping"></i>
                 </a >
             </div>
@@ -149,15 +130,11 @@
                 </a>
             </div>
         </nav>
-
         <div class="contenedor_derechos">
             <p class="derechos">&COPY; Derechos Reservados - <?php echo date('Y'); ?></p>
         </div>
     </footer> <!--fin.footer-->
-
 </body> <!--fin.body-->
-
 <!-- JAVASCRIPT -->
 <script src="js/index.js"></script>
-
 </html> <!--fin.html-->

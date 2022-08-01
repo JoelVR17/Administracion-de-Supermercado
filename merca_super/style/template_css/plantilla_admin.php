@@ -1,11 +1,8 @@
 <!-- HTML5 -->
 <!DOCTYPE html>
-
 <!-- HTML -->
 <html lang="en">
-
 <!-- HEAD -->
-
 <head>
     <?php require_once "scripts.php"; ?>
     <meta charset="UTF-8">
@@ -21,18 +18,13 @@
     <link rel="stylesheet" href="./style/normalize.css">
     <script src="https://kit.fontawesome.com/850c2e9361.js" crossorigin="anonymous"></script>
     <title>Merca Super - Plantilla Admin</title>
-    
 </head>
  <!--fin.Head-->
-
 <!-- BODY -->
 <body>
-
     <!-- HEADER -->
     <header class="headerI">
-
         <nav class="navbar navbar-light">
-
             <!-- CONTENEDOR DEL HOME -->
             <div class="contenedor__home">
                 <!-- INDEX -->
@@ -40,15 +32,12 @@
                     <p class="merca">Merca<br><span class="super">Súper</span></p>
                 </a>
             </div>
-
             <!-- MENU MOBILE -->
             <div class="mobile-menu" style="font-size: 3rem; cursor: pointer;">
                 <i style="color: #FFF4E6;" class="fa-solid fa-bars"></i>
             </div>
-
             <!-- CONTENEDOR DE LAS ANCLAS -->
             <div class="contenedor__anclas">
-
                 <!-- INVENTARIO -->
                 <a class="ancla" href="inventario.php">
                     <p>Inventario</p>
@@ -56,7 +45,6 @@
                         <i class="fa-solid fa-caret-up"></i>
                     </div>
                 </a >
-
                 <!-- PEDIDOS -->
                 <a class="ancla" href="pedidos.php">
                     <i class="fa-solid fa-warehouse"></i>
@@ -64,7 +52,6 @@
                         <i class="fa-solid fa-square-list"></i>
                     </div>
                 </a >
-
                 <!-- CONTACTO -->
                 <a class="ancla" href="contacto_admin.php">
                     <i class="fa-solid fa-message"></i>
@@ -73,14 +60,12 @@
                     </div>
                 </a >
             </div>
-
             <!-- CONTENEDOR DE LAS REDES -->
             <div class="contenedor__redes">
                 <!-- INSTAGRAM -->
                 <a class="anclaI" href="">
                     <i class="fa-brands fa-instagram"></i>
                 </a >
-
                 <!-- FACEBOOK -->
                 <a class="anclaF" href="">
                     <i class="fa-brands fa-facebook-square"></i>
@@ -88,16 +73,13 @@
             </div>
         </nav>
     </header> <!--fin.header-->
-
     <!-- CONTENEDOR PRINCIPAL -->
     <div style="border: 1px solid black; height: 800px;" class="container">
 
     </div>
-
     <!-- FOOTER -->
     <footer class="footer">
-        <nav class="navbar navbar-light">
-                
+        <nav class="navbar navbar-light">   
             <!-- CONTENEDOR DEL HOME -->
             <div class="contenedor__home">
                 <!-- INDEX -->
@@ -105,12 +87,10 @@
                     <p class="merca">Merca<br><span class="super">Súper</span></p>
                 </a >
             </div>
-
             <!-- MENU MOBILE -->
             <div class="mobile-menu" style="font-size: 3rem; cursor: pointer;">
                 <i style="color: #FFF4E6;" class="fa-solid fa-bars"></i>
             </div>
-
             <!-- CONTENEDOR DE LAS ANCLAS -->
             <div class="contenedor__anclas">
                 <!-- INVENTARIO -->
@@ -120,7 +100,6 @@
                         <i class="fa-solid fa-caret-up"></i>
                     </div>
                 </a >
-
                 <!-- LISTA PEDIDOS -->
                 <a class="ancla-f" href="pedidos.php">
                     <i class="fa-solid fa-warehouse"></i>
@@ -128,7 +107,6 @@
                         <i class="fa-solid fa-list-check"></i>
                     </div>
                 </a >
-
                 <!-- CONTACTO -->
                 <a class="ancla-f" href="contacto_admin.php">
                     <i class="fa-solid fa-message"></i>
@@ -143,22 +121,17 @@
                 <a class="anclaI" href="">
                     <i class="fa-brands fa-instagram"></i>
                 </a >
-
                 <!-- FACEBOOK -->
                 <a class="anclaF" href="">
                     <i class="fa-brands fa-facebook-square"></i>
                 </a>
             </div>
         </nav>
-
         <div class="contenedor_derechos">
             <p class="derechos">&COPY; Derechos Reservados - <?php echo date('Y'); ?></p>
         </div>
     </footer> <!--fin.footer-->
-
 </body> <!--fin.body-->
-
 <!-- JAVASCRIPT -->
 <script src="js/index.js"></script>
-
 </html> <!--fin.html-->

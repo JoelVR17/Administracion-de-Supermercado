@@ -1,22 +1,17 @@
 <!-- HTML5 -->
 <!DOCTYPE html>
-
 <!-- HTML -->
 <html lang="en">
-
 <!-- SE IMPORTA EL HEAD -->
 <?php 
-    require './style/template_html_user/head.php';
+    require './style/template_user/head.php';
 ?>
-
 <!-- BODY -->
 <body style="height: auto;">
-
     <!-- SE IMPORTA EL HEADER -->
     <?php 
-        require './style/template_html_user/header.php';
+        require './style/template_user/header.php';
     ?>
-
     <!-- CONTENEDOR PRINCIPAL -->
     <div class="infonosotros"><!-- Esto maneja la info de infonosotros-->
             <h1 class="n">¿Quienes Somos?</h1>
@@ -66,20 +61,11 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2364.5845836436583!2d-74.17588894719506!3d4.640155145441658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9dcd0b66fc3f%3A0xcf9f2a33e0b10339!2sSupermercado%20MERCASUPER_%20DINDALITO!5e0!3m2!1ses!2scr!4v1658769776996!5m2!1ses!2scr" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
-    
     <br>
     <br>
-
     <!-- SE IMPORTA EL FOOTER -->
     <?php 
-        require './style/template_html_user/footer.php';
+        require './style/template_user/footer.php';
     ?>
-
 </body> <!--fin.body-->
-
-<!-- SE IMPORTA EL JAVASCRIPT -->
-<?php 
-    require './style/template_html_user/javascript.php';
-?>
-
 </html> <!--fin.html-->

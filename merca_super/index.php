@@ -1,28 +1,26 @@
+<?php
+require_once 'scripts.php';
+require './database/validar.php';
+validarUsuario();
+?>
 <!-- HTML5 -->
 <!DOCTYPE html>
-
 <!-- HTML -->
 <html lang="en">
-
 <!-- SE IMPORTA EL HEAD -->
 <?php 
-    require './style/template_html_user/head.php';
+    require './style/template_user/head.php';
 ?>
-
 <!-- BODY -->
 <body style="height: auto;">
-
     <!-- SE IMPORTA EL HEADER -->
     <?php 
-        require './style/template_html_user/header_index.php';
+        require './style/template_user/header_index.php';
     ?>
-    
     <!-- CONTENIDO COLUMNAS -->
     <div class="contenido__columnas">
         <div class="info">
-
             <h1 id="tit">¡Haz tu pedido en línea!</h1>
-
             <p>Llega hasta tu casa</p>
                 <br>
             <a href="carrito.php" class="ir">
@@ -31,7 +29,6 @@
         </div>
         <br> 
         <br>
-
         <!-- CAJAS -->
         <div class="cajas">
             <diV class="Celular">
@@ -74,7 +71,7 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="https://www.larepublica.net/storage/images/2019/12/05/20191205112225.pilsen-fifco.jpg"
-                    class="imagen_carrusel" alt="..."  style="">
+                    class="imagen_carrusel" alt="...">
             </div>
             <div class="carousel-item">
                 <img src="https://www.heineken.com/media-us/0pip2jhq/web-site-uefa-hr.jpg?quality=85"
@@ -97,18 +94,9 @@
         </button>
     </div>
 
-    <div class="br_espacio_2"></div>
-
     <!-- SE IMPORTA EL FOOTER -->
     <?php 
-        require './style/template_html_user/footer.php';
+        require './style/template_user/footer.php';
     ?>
-
 </body> <!--fin.body-->
-
-<!-- SE IMPORTA EL JAVASCRIPT -->
-<?php 
-    require './style/template_html_user/javascript.php';
-?>
-
 </html> <!--fin.html-->

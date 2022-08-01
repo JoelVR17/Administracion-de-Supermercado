@@ -1,28 +1,27 @@
+<?php
+require_once 'scripts.php';
+require './database/validar.php';
+validarAdmin();
+?>
 <!-- HTML5 -->
 <!DOCTYPE html>
-
 <!-- HTML -->
 <html lang="en">
-
 <!-- SE IMPORTA EL HEAD -->
 <?php 
-    require './style/template_html_user/head.php';
+    require './style/template_user/head.php';
 ?>
-
 <!-- BODY -->
 <body>
-
     <!-- SE IMPORTA EL HEADER -->
     <?php 
-        require './style/template_html_admin/header_index.php';
+        require './style/template_admin/header_index.php';
     ?>
-
     <!-- CONTENIDO  -->
     <div class="contenido__columnas">
         <div class="imagen">
             <img src="./img/logo.png">
         </div>
-
         <div class="contenedor__tit">
             <!-- INDEX -->
             <a class="anclaP">
@@ -30,7 +29,6 @@
                 <span id="supers" class="superA">Súper</span></p>
             </a>
         </div>
-
         <div class="infoA">
             <h1 id="tit">Bienvenido</h1>
             <p>Ve los pedidos</p>
@@ -47,21 +45,12 @@
         </div>
         
     </div>
-
     <div class="contenedor__grafico" style="width: 90%; height: 40rem; display: flex; justify-content: center; margin-top: 50rem; margin-bottom: 10rem;">
         <img src="img/grafico.png" alt="" style="width: 100%; height: 100%;">
     </div>
-
     <!-- SE IMPORTA EL FOOTER -->
     <?php 
-        require './style/template_html_admin/footer.php';
+        require './style/template_admin/footer.php';
     ?>
-
 </body> <!--fin.body-->
-
-<!-- SE IMPORTA EL JAVASCRIPT -->
-<?php 
-    require './style/template_html_user/javascript.php';
-?>
-
 </html> <!--fin.html-->
