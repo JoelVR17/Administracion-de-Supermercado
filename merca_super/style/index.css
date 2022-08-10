@@ -199,7 +199,6 @@ table.dataTable {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
     padding: 50px;
 }
 
@@ -571,4 +570,62 @@ footer {
 
 #tit {
     color: var(--crema) !important;
+}
+
+/*MENSAJE DE BIENVENIDA*/
+@keyframes fade {
+
+    5% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+    }
+
+    90% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    95% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+    
+}
+
+@keyframes progresx {
+    to {
+        width: calc(100% - 10px);
+    }
+}
+
+.notificacion {
+    position: relative;
+    display: inline-block;
+    max-width: 300px;
+    padding: 20px 15px;
+    border-radius: 4px;
+    background-color: var(--crema);
+    color: var(--grisOscuro);
+    font-weight: 600;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
+    transform: translateY(38px);
+    opacity: 0;
+    visibility: hidden;
+    animation: fade 4s linear forwards;
+}
+
+.progress {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    width: 0;
+    height: 5px;
+    background-image: linear-gradient(to right, var(--celeste), var(--grisOscuro));
+    border-radius: 4px;
+    animation: progresx 3s .25s linear forwards;
 }

@@ -30,6 +30,13 @@ validarAdmin();
             </a>
         </div>
         <div class="infoA">
+            <div style="display: flex; justify-content: flex-end; align-items: center; margin-left: 30px;">
+                <!-- BIENVENIDO -->
+                <div class="notificacion">
+                    <p>Bienvenido <?php echo 'Administrador';?></p> <!-- Hay que insertarle un echo con el nombre dle usuario logueado -->
+                    <span class="progress"></span>
+                </div>
+            </div>
             <h1 id="tit">Bienvenido</h1>
             <p>Ve los pedidos</p>
             <br>

@@ -13,13 +13,23 @@ validarUsuario();
 ?>
 <!-- BODY -->
 <body style="height: auto;">
+
     <!-- SE IMPORTA EL HEADER -->
     <?php 
         require './style/template_user/header_index.php';
     ?>
+
     <!-- CONTENIDO COLUMNAS -->
     <div class="contenido__columnas">
         <div class="info">
+            <div style="display: flex; justify-content: flex-end; align-items: center; margin-left: 30px;">
+                <!-- BIENVENIDO -->
+                <div class="notificacion">
+                    <p>Bienvenido <?php echo 'Carlos Gutierrez';?></p> <!-- Hay que insertarle un echo con el nombre dle usuario logueado -->
+                    <span class="progress"></span>
+                </div>
+            </div>
+            
             <h1 id="tit">¡Haz tu pedido en línea!</h1>
             <p>Llega hasta tu casa</p>
                 <br>
