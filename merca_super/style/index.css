@@ -629,3 +629,7 @@ footer {
     border-radius: 4px;
     animation: progresx 3s .25s linear forwards;
 }
+
+a:hover {
+    text-decoration: none !important;
+}

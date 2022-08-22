@@ -2,6 +2,12 @@
 require_once 'scripts.php';
 require './database/validar.php';
 validarUsuario();
+
+$nombre = $_SESSION['nombre'];
+$apellido = $_SESSION['apellido'];
+$cedula = $_SESSION['cedula'];
+$user = $_SESSION['usuario'];
+
 ?>
 <!-- HTML5 -->
 <!DOCTYPE html>
@@ -25,7 +31,7 @@ validarUsuario();
             <div style="display: flex; justify-content: flex-end; align-items: center; margin-left: 30px;">
                 <!-- BIENVENIDO -->
                 <div class="notificacion">
-                    <p>Bienvenido <?php echo 'Carlos Gutierrez';?></p> <!-- Hay que insertarle un echo con el nombre dle usuario logueado -->
+                    <p>Bienvenido <?php echo $nombre . ' ' . $apellido;?></p> <!-- Hay que insertarle un echo con el nombre dle usuario logueado -->
                     <span class="progress"></span>
                 </div>
             </div>

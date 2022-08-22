@@ -1,3 +1,14 @@
+<?php
+require_once 'scripts.php';
+require './database/validar.php';
+validarUsuario();
+
+$nombre = $_SESSION['nombre'];
+$apellido = $_SESSION['apellido'];
+$cedula = $_SESSION['cedula'];
+$user = $_SESSION['usuario'];
+?>
+
 <!-- HTML5 -->
 <!DOCTYPE html>
 <!-- HTML -->
@@ -18,11 +29,11 @@
             <form class="row g-3" id="formRegistro">
                 <div class="col-md-6">
                     <label for="contacName" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="contacName"  maxlength="40" minlength="1">
+                    <input value="<?php echo $nombre?>"type="text" class="form-control" id="contacName"  maxlength="40" minlength="1">
                 </div>
                 <div class="col-md-6">
                     <label for="contacLastName" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="contacLastName"  maxlength="40" minlength="1">
+                    <input value="<?php echo $apellido?>"type="text" class="form-control" id="contacLastName"  maxlength="40" minlength="1">
                 </div>
                 <div class="col-md-12">
                     <label for="contacEmail" class="form-label">E-mail</label>

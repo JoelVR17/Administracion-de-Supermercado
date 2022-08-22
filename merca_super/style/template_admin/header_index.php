@@ -16,24 +16,15 @@
         <div class="contenedor__anclas">
             <!-- INVENTARIO -->
             <a class="ancla" href="inventario.php">
-                <p>Inventario</p>
-                <div class="cont-ancla" id="miP">
-                    <i class="fa-solid fa-caret-up"></i>
-                </div>
+                <p style="line-height: 80%;">Inventario</p>
             </a >
             <!-- PEDIDOS -->
             <a class="ancla" href="pedidos.php">
                 <i class="fa-solid fa-list-check"></i>
-                <div class="cont-ancla" id="cont">
-                    <i class="fa-solid fa-square-list"></i>
-                </div>
             </a >
             <!-- CONTACTO -->
             <a class="ancla" href="contacto_admin.php">
                 <i class="fa-solid fa-message"></i>
-                <div class="cont-ancla" id="car">
-                    <i class="fa-solid fa-caret-up"></i>
-                </div>
             </a >
         </div>
         <!-- CONTENEDOR DE LAS REDES -->

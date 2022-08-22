@@ -1,0 +1,44 @@
+/*VARIABLES*/
+
+/*---------------------------------------------------------------------------------*/
+/*FUENTES*/
+:root {
+    --krub: 'Krub', sans-serif;
+    --mukta: 'Mukta', sans-serif;
+    --openSans: 'Open Sans', sans-serif;
+    --ptSans: 'PT Sans', sans-serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Staatlinches: 'Staatliches', cursive;
+    --ubuntu: 'Ubuntu', sans-serif;
+}
+
+/*---------------------------------------------------------------------------------*/
+/*PALETA DE COLORES*/
+:root {
+    --crema: #FFF4E6;
+    --celeste: #608BA1;
+    --grisOscuro: #383838;
+    --verde: #008B00;
+    --grisClaro: #EBEBEB;
+    --rojo: #FF0000;
+    --negro: #000000;
+    --blanco: #FFFFFF;
+}
+
+/*---------------------------------------------------------------------------------*/
+
+/*GLOBALES PARA QUE OCUPEN TODA LA PANTALLA*/
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.contenedor__imagen {
+    width: 20%;
+    min-height: 10rem;
+    border-radius: 100%;
+    background-image: url('../img/persona2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

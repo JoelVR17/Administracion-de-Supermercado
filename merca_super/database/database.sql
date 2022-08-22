@@ -1,6 +1,12 @@
 CREATE DATABASE super_merca;
 USE super_merca;
 
+/*
+Primero Categoria
+Segundo Productos
+
+*/
+
 # De segundo se ejecuta/crea la tabla productos y se agregan sus datos
 CREATE TABLE IF NOT EXISTS productos
 ( id INT(7) NOT NULL AUTO_INCREMENT,
@@ -186,6 +192,8 @@ BEGIN
  RETURN dato;
  END//
 DELIMITER ;
+
+SET GLOBAL log_bin_trust_function_creators = 1;
 
 # drop function buscarRepetido;
 

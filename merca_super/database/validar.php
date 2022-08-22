@@ -35,9 +35,23 @@ function validarRol() {
 
         $row = $resultado->fetch(PDO::FETCH_NUM);
         if ($row == true) {
+            
             // Validar rol
+            $id = $row[0]; // Indice del rol en arreglo o posición del id en tabla de usuarios
+            $nombre = $row[1]; // Indice del rol en arreglo o posición del id en tabla de usuarios
+            $apellido = $row[2]; // Indice del rol en arreglo o posición del id en tabla de usuarios
+            $cedula = $row[3]; // Indice del rol en arreglo o posición del id en tabla de usuarios
+            $usuario = $row[4]; // Indice del rol en arreglo o posición del id en tabla de usuarios
             $rol = $row[7]; // Indice del rol en arreglo o posición del rol en tabla de usuarios
+
+            //  SE LLENA EL SESSION
+            $_SESSION['id'] = $id;
+            $_SESSION['nombre'] = $nombre;
+            $_SESSION['apellido'] = $apellido;
+            $_SESSION['cedula'] = $cedula;
+            $_SESSION['usuario'] = $usuario;
             $_SESSION['rol'] = $rol;
+
             switch ($_SESSION['rol']) {
                 case 1:
                     header('location: indexadmin.php'); // Esto se cambia

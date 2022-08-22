@@ -36,5 +36,6 @@
     <link rel="stylesheet" href="./style/template_css/footer_header.css">
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="../merca_super/style/contacto.css">
+    <link rel="stylesheet" href="../merca_super/style/miPerfil.css">
     <script src="https://kit.fontawesome.com/850c2e9361.js" crossorigin="anonymous"></script>
 </head> <!--fin.Head-->
