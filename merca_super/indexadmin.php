@@ -2,6 +2,11 @@
 require_once 'scripts.php';
 require './database/validar.php';
 validarAdmin();
+
+$nombre = $_SESSION['nombre'];
+$apellido = $_SESSION['apellido'];
+$cedula = $_SESSION['cedula'];
+$user = $_SESSION['usuario'];
 ?>
 <!-- HTML5 -->
 <!DOCTYPE html>
@@ -11,6 +16,7 @@ validarAdmin();
 <?php 
     require './style/template_user/head.php';
 ?>
+
 <!-- BODY -->
 <body>
     <!-- SE IMPORTA EL HEADER -->
@@ -18,7 +24,7 @@ validarAdmin();
         require './style/template_admin/header_index.php';
     ?>
     <!-- CONTENIDO  -->
-    <div class="contenido__columnas">
+    <div class="contenido__columnasAd">
         <div class="imagen">
             <img src="./img/logo.png">
         </div>
@@ -33,7 +39,7 @@ validarAdmin();
             <div style="display: flex; justify-content: flex-end; align-items: center; margin-left: 30px;">
                 <!-- BIENVENIDO -->
                 <div class="notificacion">
-                    <p>Bienvenido <?php echo 'Administrador';?></p> <!-- Hay que insertarle un echo con el nombre dle usuario logueado -->
+                    <p>Bienvenido <?php echo $nombre?> <?php echo 'Administrador';?></p>
                     <span class="progress"></span>
                 </div>
             </div>
@@ -52,12 +58,27 @@ validarAdmin();
         </div>
         
     </div>
-    <div class="contenedor__grafico" style="width: 90%; height: 40rem; display: flex; justify-content: center; margin-top: 50rem; margin-bottom: 10rem;">
-        <img src="img/grafico.png" alt="" style="width: 100%; height: 100%;">
+    <div class="contenedor__grafico">
+        <div class="contenedor__elemento">
+            <!-- GRAFICO 1 -->
+            <div>
+                <div id="chartdiv"></div>
+            </div>
+            <!-- GRAFICO 2 -->
+            <div>
+                <div id="chartp"></div>
+            </div>
+        </div>
     </div>
     <!-- SE IMPORTA EL FOOTER -->
     <?php 
         require './style/template_admin/footer.php';
     ?>
 </body> <!--fin.body-->
+<!-- Resources -->
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/plugins/annotation.js"></script> 
+<script src="./js/graficos.js"></script>
 </html> <!--fin.html-->
