@@ -1,12 +1,10 @@
-let cartel = document.getElementById('cartel');
-let carrusel = document.getElementById('carrusel');
+//  SE ESPERA A QUE SE CARGUE LA PAGINA PARA AGREGAR LA CLASE A LA NOTIFICACION
+$(document).ready(function () {
 
-function mostrarScroll() {
-    cartel.classList.add('no');
-    cartel.classList.add('animacion');
-    
-    carrusel.classList.remove('no');
-    carrusel.classList.add('animacion');
-}
+    let divNoti = document.getElementById('noti');
+    let divFicacion = document.getElementById('ficacion');
 
-window.addEventListener('scroll', mostrarScroll);
+    divNoti.classList.add('notificacion');
+    divFicacion.classList.add('progress');
+
+});

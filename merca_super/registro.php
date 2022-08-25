@@ -17,7 +17,7 @@
 <!-- BODY -->
 <body id="body">
     <!-- MAIN -->
-    <main class="container-fluid">
+    <main style="overflow-x: hidden;" class="container-fluid">
         <div class="row">
             <!-- COLUMNA DEL LOGO -->
             <div class="col col-1">

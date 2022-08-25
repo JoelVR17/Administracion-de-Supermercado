@@ -2,12 +2,10 @@
 require_once 'scripts.php';
 require './database/validar.php';
 validarUsuario();
-
 $nombre = $_SESSION['nombre'];
 $apellido = $_SESSION['apellido'];
 $cedula = $_SESSION['cedula'];
 $user = $_SESSION['usuario'];
-
 ?>
 <!-- HTML5 -->
 <!DOCTYPE html>
@@ -26,15 +24,13 @@ $user = $_SESSION['usuario'];
 
     <!-- CONTENEDOR MIPERFIL -->
     <div style="min-height: 200px;" class="container" style="justify-content: center; align-items: center;">
-        <div class="contenedor__imagen">
-            
-        </div>
+        <div class="contenedor__imagen"></div>
     </div>
 
     <!-- CONTENEDOR PRINCIPAL -->
     <div style="min-height: 400px;" class="container">
         <div class="contenedor_form">
-            <form class="row g-3" id="formRegistro">
+            <form class="row g-5" id="formRegistro">
                 <div class="col-md-6">
                     <label for="perfilName" class="form-label">Nombre</label>
                     <input readonly value="<?php echo $nombre?>" type="text" class="form-control" id="perfilName"  maxlength="40" minlength="1">

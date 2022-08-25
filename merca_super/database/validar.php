@@ -35,7 +35,7 @@ function validarRol() {
 
         $row = $resultado->fetch(PDO::FETCH_NUM);
         if ($row == true) {
-            
+
             // Validar rol
             $id = $row[0]; // Indice del rol en arreglo o posición del id en tabla de usuarios
             $nombre = $row[1]; // Indice del rol en arreglo o posición del id en tabla de usuarios
@@ -43,6 +43,7 @@ function validarRol() {
             $cedula = $row[3]; // Indice del rol en arreglo o posición del id en tabla de usuarios
             $usuario = $row[4]; // Indice del rol en arreglo o posición del id en tabla de usuarios
             $rol = $row[7]; // Indice del rol en arreglo o posición del rol en tabla de usuarios
+            $nombreCompleto = $row[1] . " " . $row[2]; 
 
             //  SE LLENA EL SESSION
             $_SESSION['id'] = $id;
@@ -51,6 +52,7 @@ function validarRol() {
             $_SESSION['cedula'] = $cedula;
             $_SESSION['usuario'] = $usuario;
             $_SESSION['rol'] = $rol;
+            $_SESSION['nombreCompleto'] = $nombreCompleto;
 
             switch ($_SESSION['rol']) {
                 case 1:
@@ -91,6 +93,18 @@ function validarUsuario () {
         }
     }
 }
+
+
+function usuarioId (): int {
+    $id = $_SESSION['id'];
+    return $id;
+}
+
+function usuarioNombre (): string {
+    $nombre_usuario = $_SESSION['nombreCompleto'];
+    return $nombre_usuario;
+}
+
 
 // En caso que se agregue una pantalla para gestionar perfil de admin se usa este
 /*

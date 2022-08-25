@@ -1,6 +1,7 @@
 <?php
 require 'scripts.php';
 require './database/validar.php';
+
 validarRol();
 ?>
 <!-- HTML5 -->
@@ -20,7 +21,7 @@ validarRol();
 <!-- BODY -->
 <body>
     <!-- MAIN -->
-    <main class="container-fluid">
+    <main style="overflow-x: hidden;" class="container-fluid">
         <div class="row">
             <!-- COLUMNA DEL LOGO -->
             <div class="col col-1">

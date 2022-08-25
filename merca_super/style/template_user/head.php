@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="../merca_super/style/contacto.css">
     <script src="https://kit.fontawesome.com/850c2e9361.js" crossorigin="anonymous"></script>
-    <title>Merca Super</title>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,7 +23,7 @@
     <!-- SweetAlert 2 para alertas -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.0.2/dist/sweetalert2.min.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    
     <!--datables CSS básico-->
     <link rel="stylesheet" type="text/css" href="assets/datatables/datatables.min.css"/>
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css">
@@ -33,9 +32,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="../merca_super/style/index.css">
-    <link rel="stylesheet" href="./style/template_css/footer_header.css">
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="../merca_super/style/contacto.css">
     <link rel="stylesheet" href="../merca_super/style/miPerfil.css">
+    <link rel="stylesheet" href="../merca_super/style/indexadmin.css">
+    <link rel="stylesheet" href="./style/template_css/footer_header.css">
+    <title>Merca Super</title>
     <script src="https://kit.fontawesome.com/850c2e9361.js" crossorigin="anonymous"></script>
 </head> <!--fin.Head-->

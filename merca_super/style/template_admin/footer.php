@@ -14,36 +14,31 @@
         </div>
         <!-- CONTENEDOR DE LAS ANCLAS -->
         <div class="contenedor__anclas">
-            <!-- INVENTARIO -->
-            <a class="ancla-f" href="inventario.php">
-                <p>Inventario</p>
-                <div class="cont-ancla" id="miP">
-                    <i class="fa-solid fa-caret-up"></i>
-                </div>
-            </a >
-            <!-- LISTA PEDIDOS -->
-            <a class="ancla-f" href="pedidos.php">
-                <i class="fa-solid fa-list-check"></i>
-                <div class="cont-ancla" id="cont">
-                    <i class="fa-solid fa-list-check"></i>
-                </div>
-            </a >
-            <!-- CONTACTO -->
-            <a class="ancla-f" href="contacto_admin.php">
-                <i class="fa-solid fa-message"></i>
-                <div class="cont-ancla" id="car">
-                    <i class="fa-solid fa-caret-up"></i>
-                </div>
-            </a >
+                <!-- INVENTARIO -->
+                <a class="ancla-f" href="inventario.php">
+                    <p style="line-height: 80%;">Inventario</p>
+                </a >
+                <!-- USUARIOS -->
+                <a class="ancla-f" href="usuarios.php">
+                    <p style="line-height: 80%;">Usuarios</p> 
+                </a >
+                <!-- PEDIDOS -->
+                <a class="ancla-f" href="pedidos.php">
+                    <p style="line-height: 80%;">Ordenes</p> 
+                </a >
+                <!-- CONTACTO -->
+                <a class="ancla-f" href="contacto_admin.php">
+                    <p style="line-height: 80%;">Consultas</p>
+                </a >
         </div>
         <!-- CONTENEDOR DE LAS REDES -->
         <div class="contenedor__redes">
             <!-- INSTAGRAM -->
-            <a class="anclaI" href="">
+            <a class="anclaI" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-instagram"></i>
             </a >
             <!-- FACEBOOK -->
-            <a class="anclaF" href="">
+            <a class="anclaF" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-facebook-square"></i>
             </a>
         </div>

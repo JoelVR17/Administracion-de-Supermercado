@@ -18,27 +18,24 @@ body{
     align-items: center;
    }
 
-   .principal { 
+.principal { 
     background-color:#608BA1;
     height: 500px;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    
+    text-align: center;   
 }
 
 .container-titulo{
-    position: absolute;
- 
-     
- }
+    position: absolute;   
+}
 
- .container-titulo .merca{
+.container-titulo .merca{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30PX;
     color: #FFF4E6;
     margin-left: 200PX ;
-    }
+}
 
 .textotitulo {
     vertical-align: middle;
@@ -116,9 +113,80 @@ body{
 
 }
 
+.contenido__columnasAd {
+    margin-top: 7rem;
+    width: 80%;
+    background-color: var(--grisOscuro);
+    margin-left: 10% ;
+    position: absolute;
+    transform: translateY(-60%);
+    height: auto !important;
+    padding: 3rem;
+}
 
+.contenedor__grafico { 
+    width: 100%; 
+    height: 70rem;
+    margin-top: 43rem; 
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+}
 
+.contenedor__elemento {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
 
+#chartdiv {
+    margin-top: 30px;
+    width: 500px;
+    height: 500px;
+    margin-right: 20px;
+    font-size: 15;
+}
 
+.grafico {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
 
+.tarjeta {
+    background-color: var(--celeste);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
+    min-height: 15rem;
+}
 
+.tarjeta1 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.tarjeta2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.titulo__tarjeta {
+    font-size: 3.5rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: var(--crema);
+}
+
+.resultado__tarjeta {
+    font-size: 5rem;
+    font-weight: 450;
+    color: var(--blanco);
+    margin-top: 1rem;
+}

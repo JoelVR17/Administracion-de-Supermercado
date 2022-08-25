@@ -1,8 +1,11 @@
 <?php
 require_once 'scripts.php';
 require './database/validar.php';
+require './database/conexion.php';
+require './database/tarjetas.php';
+$objeto = new Conexion();
+$conexion = $objeto->Conectar();
 validarAdmin();
-
 $nombre = $_SESSION['nombre'];
 $apellido = $_SESSION['apellido'];
 $cedula = $_SESSION['cedula'];
@@ -16,7 +19,6 @@ $user = $_SESSION['usuario'];
 <?php 
     require './style/template_user/head.php';
 ?>
-
 <!-- BODY -->
 <body>
     <!-- SE IMPORTA EL HEADER -->
@@ -38,9 +40,9 @@ $user = $_SESSION['usuario'];
         <div class="infoA">
             <div style="display: flex; justify-content: flex-end; align-items: center; margin-left: 30px;">
                 <!-- BIENVENIDO -->
-                <div class="notificacion">
+                <div id="noti">
                     <p>Bienvenido <?php echo $nombre?> <?php echo 'Administrador';?></p>
-                    <span class="progress"></span>
+                    <span id="ficacion"></spanclass=>
                 </div>
             </div>
             <h1 id="tit">Bienvenido</h1>
@@ -56,17 +58,34 @@ $user = $_SESSION['usuario'];
                 Ir
             </a>
         </div>
-        
     </div>
+
+    <!-- DATOS -->
     <div class="contenedor__grafico">
         <div class="contenedor__elemento">
-            <!-- GRAFICO 1 -->
-            <div>
+            <!-- GRAFICO -->
+            <div class="grafico" style="display: flex; justify-content: center; align-items: center; text-align: center;">
                 <div id="chartdiv"></div>
             </div>
-            <!-- GRAFICO 2 -->
-            <div>
-                <div id="chartp"></div>
+            <!-- TARJETA 1 -->
+            <div class="tarjeta tarjeta1 bg-warning">
+                <h2 class="titulo__tarjeta">Cantidad de Productos</h2>
+                <p class="resultado__tarjeta"><?php echo cantidadProductos($conexion);?></p>
+            </div>
+            <!-- TARJETA 2 -->
+            <div class="tarjeta tarjeta2 bg-danger">
+            <h2 class="titulo__tarjeta">Cantidad de Categorias</h2>
+                <p class="resultado__tarjeta"><?php echo cantidadCategorias($conexion);?></p>
+            </div>
+            <!-- TARJETA 3 -->
+            <div class="tarjeta tarjeta3 bg-danger">
+                <h2 class="titulo__tarjeta">Cantidad de Usuarios Admin</h2>
+                <p class="resultado__tarjeta"><?php echo cantidadUsuariosAdmin($conexion);?></p>
+            </div>
+            <!-- TARJETA 4 -->
+            <div class="tarjeta tarjeta4 bg-warning">
+                <h2 class="titulo__tarjeta">Cantidad de Usuarios</h2>
+                <p class="resultado__tarjeta"><?php echo cantidadUsuariosNormales($conexion);?></p>
             </div>
         </div>
     </div>
@@ -75,7 +94,6 @@ $user = $_SESSION['usuario'];
         require './style/template_admin/footer.php';
     ?>
 </body> <!--fin.body-->
-<!-- Resources -->
 <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
 <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
 <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>

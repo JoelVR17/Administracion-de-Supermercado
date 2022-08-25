@@ -34,8 +34,8 @@
 
             <!-- CARRITO -->
             <a class="ancla-f" href="carrito.php">
-                <i class="fa-solid fa-cart-shopping"></i>
-            </a >
+                <p>Ordenar</p>
+            </a>
         </div>
         <!-- CONTENEDOR DE LAS REDES -->
         <div class="contenedor__redes">

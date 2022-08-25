@@ -7,6 +7,8 @@ validarAdmin();
 <!DOCTYPE html>
 <!-- HTML -->
 <html lang="en">
+<!-- HEAD -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,28 +28,28 @@ validarAdmin();
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/datatables.css">
     <script src="https://kit.fontawesome.com/850c2e9361.js" crossorigin="anonymous"></script>
-    <title>Merca Super - Consultas</title>
+    <title>Merca Super - Usuarios Admin</title>
 </head>
 <!-- BODY -->
 
-<body>
+<body style="height:auto">
     <!-- SE IMPORTA EL HEADER -->
     <?php
-        require './style/template_admin/header.php';
+    require './style/template_admin/header.php';
     ?>
-    <!-- CONTENEDOR PRINCIPAL -->
-    <div class="container" style="min-height: 30rem !important;">
-        <div style="background-color: var(--crema); padding-left: 0;"  class="card-header h3 text-dark">Consultas Recibidas</div><br>
+    <div class="container"style="min-height: 30rem !important;">
+        <div style="background-color: var(--crema); padding-left: 0;"  class="card-header h3 text-dark">Usuarios Registrados</div><br>
+        <button id="btnNuevo" class="btn btn-success mb-3" title="Nuevo usuario">Nuevo usuario</button>
         <div>
-            <table id="tablaConsultas" class="table table-hover">
+            <table id="tablaUsuarios" class="table table-hover">
                 <thead>
                     <tr>
                         <th>Id</th>
                         <th>Nombre</th>
                         <th>Apellido</th>
-                        <th>Correo</th>
-                        <th>Teléfono</th>
-                        <th>Tipo Consulta</th>
+                        <th>Cédula</th>
+                        <th>Usuario</th>
+                        <th>Rol</th>
                         <th class="text-center">Acciones</th>
                     </tr>
                 </thead>
@@ -64,24 +66,25 @@ validarAdmin();
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel"></h5>
                 </div>
-                <form id="formConsultas">
+                <form id="formUsuarios">
                     <div class="modal-body">
                         <input id="id" hidden>
                         <label for="" class="col-form-label">Nombre:</label>
                         <input type="text" placeholder="Nombre" class="form-control" id="nombre">
                         <label for="" class="col-form-label">Apellido:</label>
                         <input type="text" placeholder="Apellido" class="form-control" id="apellido">
-                        <label for="" class="col-form-label">Correo</label>
-                        <input id="correo" placeholder="Correo" type="text" class="form-control">
-                        <label for="" class="col-form-label">Teléfono</label>
-                        <input id="telefono" placeholder="Teléfono" type="text" class="form-control">
-                        <label for="" class="col-form-label">Tipo Consulta</label>
-                        <input id="tipo_consulta" placeholder="Tipo Consulta" type="text" class="form-control">
-                        <label for="" class="col-form-label">Mensaje</label>
-                        <textarea id="mensaje" placeholder="Descripción de la consulta" type="text" class="form-control"></textarea>
+                        <label for="" class="col-form-label">Cédula</label>
+                        <input id="cedula" placeholder="Cédula" type="text" class="form-control">
+                        <label for="" class="col-form-label">Usuario</label>
+                        <input id="usuario" placeholder="Usuario" type="text" class="form-control">
+                        <label for="" class="col-form-label">Contraseña</label>
+                        <input id="passwd" placeholder="Contraseña" type="password" class="form-control">
+                        <label for="" class="col-form-label">Rol</label>
+                        <input id="rol" placeholder="Rol" type="text" class="form-control">
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="cancelar btn rounded" data-dismiss="modal">Salir</button>
+                        <button type="submit" id="btnGuardar" class="guardar btn rounded">Guardar</button>
+                        <button type="button" class="cancelar btn rounded" data-dismiss="modal">Cancelar</button>
                     </div>
                 </form>
             </div>
@@ -95,7 +98,6 @@ validarAdmin();
 <!--fin.body-->
 <!-- JAVASCRIPT -->
 <script src="js/index.js"></script>
-<script src="js/consultas.js"></script>
+<script src="js/usuarios.js"></script>
 
 </html>
-<!--fin.html-->

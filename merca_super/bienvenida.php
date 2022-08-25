@@ -22,32 +22,10 @@ require_once 'scripts.php';
     <link rel="stylesheet" href="../merca_super/style/contacto.css">
     <script src="https://kit.fontawesome.com/850c2e9361.js" crossorigin="anonymous"></script>
     <title>Merca Super</title>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Responsive css datatables -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.dataTables.min.css">
-    <!-- SweetAlert 2 para alertas -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.0.2/dist/sweetalert2.min.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <!--datables CSS básico-->
-    <link rel="stylesheet" type="text/css" href="assets/datatables/datatables.min.css"/>
-    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="../merca_super/style/index.css">
-    <link rel="stylesheet" href="./style/template_css/footer_header.css">
-    <link rel="stylesheet" href="./style/normalize.css">
-    <link rel="stylesheet" href="../merca_super/style/contacto.css">
     <link rel="stylesheet" href="../merca_super/style/bienvenida.css">
-    <script src="https://kit.fontawesome.com/850c2e9361.js" crossorigin="anonymous"></script>
 </head> <!--fin.Head-->
 <!-- BODY -->
-<body>
+<body style="overflow-x: hidden;">
 
     <!-- HEADER -->
     <header class="headerI">
@@ -108,9 +86,9 @@ require_once 'scripts.php';
     <!-- Aqui va el carrusel -->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="background-color: #608BA1; padding: 20px; display: flex; justify-content: center;">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button style="background-color: black;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button style="background-color: black;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button style="background-color: black;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active contenedor_item">
@@ -134,7 +112,7 @@ require_once 'scripts.php';
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-        </div>
+    </div>
 
     <br><br><br><br>
     <!-- RELLENO -->
@@ -159,7 +137,7 @@ require_once 'scripts.php';
             <!-- Objeto 2 -->
             <div class="contenedor__objeto obj">
                 <img src="./img/frutas.png" alt="">
-                <p class="informacion b">Frutas y Verduras</p>
+                <p class="informacion b">Frutas</p>
             </div>
             <!-- Objeto 5 -->
             <div class="contenedor__objeto obj">
@@ -216,23 +194,66 @@ require_once 'scripts.php';
         </div>
     </div>
 
-    <!-- TESTIMONIOS -->
-    <div class="containerT">
-        <div class="contenedor__testimonios">
-            <section class="testimoniales">
-                <h3 class="informacion__titulo" style="text-align: center; margin: 1rem;">Testimoniales</h3>
-                <div class="cuerpoTestimonio">
-                    <img class="imgT" src="./img/persona4.jpg" alt="">
-                </div>
-                <div class="testimonial">
-                    <blockquote>
-                        El pedido que realicé me llegó de una manera muy rápida. Ofrecen buenos precios y alta comodidad a la hora de realizar el pedido.
-                    </blockquote>
-                    <p class="testimonio">- Joel Vargas</p>
-                </div>
-            </section>
+     <!-- TESTIMONIOS -->
+    <div style="height: 60rem !important; width: 100% !important; display: flex; justify-content: center;" id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="background-color: #608BA1; padding: 20px; display: flex; justify-content: center;">
+        <div class="carousel-indicators">
+            <button style="background-color: black;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button style="background-color: black;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button style="background-color: black;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-    </div>
+        <div style="height: 60rem !important; width: 99% !important;" class="carousel-inner">
+
+            <!-- TESTIMONIO 1 -->
+            <div class="carousel-item active contenedor_item">
+                <div class="contenedor__testimonios" style="background-color: #608BA1 !important;" >
+                    <section class="testimoniales">
+                        <h3 class="informacion__titulo" style="text-align: center; margin: 1rem;">Testimonio</h3>
+                        <div class="cuerpoTestimonio" id="p1"></div>
+                        <div class="testimonial">
+                            <blockquote>
+                                El pedido que realicé me llegó de una manera muy rápida. Ofrecen buenos precios en todo.
+                            </blockquote>
+                            <p class="testimonio">- Joel Vargas</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- TESTIMONIO 2 -->
+            <div class="carousel-item contenedor_item">
+                <div class="contenedor__testimonios" style="background-color: #608BA1 !important;" >
+                    <section class="testimoniales">
+                        <h3 class="informacion__titulo" style="text-align: center; margin: 1rem;">Testimonio</h3>
+                        <div class="cuerpoTestimonio" id="p2"></div>
+                        <div class="testimonial">
+                            <blockquote>
+                                Gran atención en la Sucursal, pero me encantó pedir en línea, ¡es súper cómodo y rápido!
+                            </blockquote>
+                            <p class="testimonio">- Marco Araya</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- TESTIMONIO 3 -->
+            <div class="carousel-item contenedor_item">
+                <div class="contenedor__testimonios" style="background-color: #608BA1 !important;" >
+                    <section class="testimoniales">
+                        <h3 class="informacion__titulo" style="text-align: center; margin: 1rem;">Testimonio</h3>
+                        <div class="cuerpoTestimonio" id="p3"></div>
+                        <div class="testimonial">
+                            <blockquote>
+                                Los productos están a un precio sumamente bajo, es posible que siga comprando por acá...
+                            </blockquote>
+                            <p class="testimonio">- Pablo Cordero</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- .finTestiomnios -->
 
     <!-- FOOTER -->
     <footer class="footer">

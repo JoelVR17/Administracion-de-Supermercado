@@ -47,7 +47,7 @@ body {
 
 .headerI {
     background-color: var(--celeste);
-    max-height: 10rem;
+    max-height: 11.5rem;
 }
 
 .contenido__columnas {
@@ -253,6 +253,7 @@ blockquote::before {
     color: var(--blanco);
 }
 
+
 .cuerpoTestimonio {
     margin-bottom: 5rem;
     width: 20%;
@@ -261,6 +262,29 @@ blockquote::before {
     text-align: center;
 }
 
+.cuerpoTestimonio {
+    border-radius: 100% 100% 0 100%;
+    width: 25%;
+    min-height: 10rem;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
 .imgT {
     border-radius: 100% 100% 0 100%;
+}
+
+#p1 {
+    background-image: url('../img/t2.jpg');
+}
+
+#p2 {
+    background-image: url('../img/t1.jpg');
+}
+
+#p3 {
+    background-image: url('../img/persona2.jpg');
 }

@@ -35,7 +35,7 @@ html, body {
 
 .contenedor__imagen {
     width: 20%;
-    min-height: 10rem;
+    height: 20rem;
     border-radius: 100%;
     background-image: url('../img/persona2.jpg');
     background-repeat: no-repeat;

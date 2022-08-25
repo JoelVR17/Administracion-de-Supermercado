@@ -4,7 +4,7 @@
         <!-- CONTENEDOR DEL HOME -->
         <div class="contenedor__home">
             <!-- INDEX -->
-            <a class="anclaP" href="index.php">
+            <a style="text-decoration: none;" class="anclaP" href="index.php">
                 <p class="merca">Merca<br><span class="super">Súper</span></p>
             </a>
         </div>
@@ -15,20 +15,20 @@
         <!-- CONTENEDOR DE LAS ANCLAS -->
         <div class="contenedor__anclas">
             <!-- MI PERFIL -->
-            <a class="ancla" href="miPerfil.php">
+            <a style="text-decoration: none;" class="ancla" href="miPerfil.php">
                 <p style="line-height: 80%;">Mi Perfil</p>
             </a >
             <!-- NOSOTROS -->
-            <a class="ancla" href="nosotros.php">
+            <a style="text-decoration: none;" class="ancla" href="nosotros.php">
                 <p style="line-height: 80%;">Nosotros</p>
             </a >
             <!-- CONTACTO -->
-            <a class="ancla" href="contacto.php">
+            <a style="text-decoration: none;" class="ancla" href="contacto.php">
                 <p style="line-height: 80%;">Contacto</p>
             </a >
             <!-- CARRITO -->
-            <a class="ancla" href="carrito.php">
-                <i class="fa-solid fa-cart-shopping"></i>
+            <a style="text-decoration: none;" class="ancla" href="carrito.php">
+                <p style="line-height: 80%;">Ordenar</p>
             </a>
         </div>
         <!-- CONTENEDOR DE LAS REDES -->
